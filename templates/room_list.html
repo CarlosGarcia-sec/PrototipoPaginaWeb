@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Escape Rooms{% endblock %}
+
+{% block content %}
+<h1 class="my-4">Lista de Escape Rooms</h1>
+<div class="row">
+    {% for room in rooms %}
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{ room[1] }}</h5>
+                <p class="card-text">{{ room[2] }}</p>
+                <p class="card-text"><small class="text-muted">Dificultad: {{ room[3] }}</small></p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

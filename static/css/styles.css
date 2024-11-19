@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #A8D5BA, #6B8E23); /* Degradado en diagonal de verde menta a verde oliva */
+    background-attachment: fixed; /* Fija el fondo para que no se repita */
+    background-size: cover; /* Asegúrate de que cubra toda el área */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: linear-gradient(to right, #4B5320, #90A285); /* Degradado de izquierda a derecha de verde oscuro a verde claro */
+}
+
+nav a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: #A0522D; /* Tono marrón para las tarjetas */
+    border: none;
+}
+
+.card-body {
+    color: #ffffff; /* Color del texto de las reseñas */
+}
+
+.jumbotron {
+    background: #fff6e4; /* Color marrón claro */
+    color: #333; /* Color del texto */
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.jumbotron .btn-primary {
+    background-color: #A0522D; /* Color marrón medio */
+    border-color: #A0522D;
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #8B4513; /* Color marrón oscuro */
+    border-color: #8B4513;
+}
+
+.jumbotron .btn-secondary {
+    background-color: #D2B48C; /* Color marrón claro */
+    border-color: #D2B48C;
+}
+
+.jumbotron .btn-secondary:hover {
+    background-color: #C3A384; /* Color marrón más oscuro */
+    border-color: #C3A384;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+hr {
+    border-top: 2px solid #8B4513;
+    margin: 2rem 0;
+}
+
+.btn-primary {
+    background-color: #A0522D;
+    border-color: #A0522D;
+}
+
+.btn-primary:hover {
+    background-color: #8B4513;
+    border-color: #8B4513;
+}

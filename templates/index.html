@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="text-center mb-4">Bienvenido a Cazadoras de Memorias</h1>
+    <p class="lead">Creamos experiencias únicas de escape room en tu pueblo. ¡Atrae a turistas y ofrece una actividad emocionante para tus ciudadanos!</p>
+    <hr class="my-4">
+    <p>Explora cómo podemos ayudarte a crear una experiencia personalizada en tu localidad.</p>
+    <a class="btn btn-primary btn-lg mx-2" href="{{ url_for('about') }}" role="button">Sobre Nosotros</a>
+    <a class="btn btn-secondary btn-lg mx-2" href="{{ url_for('contact') }}" role="button">Contáctanos</a>
+</div>
+<div class="text-center my-4">
+    <img src="{{ url_for('static', filename='img/escape_room.jpg') }}" class="img-fluid rounded shadow" alt="Escape Room" style="max-width: 50%;">
+</div>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <i class="fas fa-tree fa-3x mb-3" style="color: #8B4513;"></i>
+            <h4>Revitalizamos el turismo rural</h4>
+            <p>Atraemos a jóvenes y familias a descubrir la belleza de los pueblos pequeños, dinamizando sus economías locales.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="fas fa-landmark fa-3x mb-3" style="color: #8B4513;"></i>
+            <h4>Preservamos el patrimonio histórico</h4>
+            <p>Transformamos la historia en experiencias vivas que promueven el aprendizaje y el respeto por nuestras raíces.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="fas fa-users fa-3x mb-3" style="color: #8B4513;"></i>
+            <h4>Conectamos generaciones</h4>
+            <p>Fomentamos actividades que unen a personas de diferentes edades, creando recuerdos inolvidables en entornos únicos.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

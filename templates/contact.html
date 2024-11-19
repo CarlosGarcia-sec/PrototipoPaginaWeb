@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Contáctanos</h1>
+    <p class="text-center">Si estás interesado en crear un escape room en tu pueblo, por favor, rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+    <form method="POST" action="{{ url_for('contact') }}">
+        <div class="form-group">
+            <label for="name"></label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre y apellidos..." required>
+        </div>
+        <div class="form-group">
+            <label for="email"></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico..." required>
+        </div>
+        <div class="form-group">
+            <label for="message"></label>
+            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+{% endblock %}

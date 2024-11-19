@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre Nosotros{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Sobre Nosotros</h1>
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='img/team.jpg') }}" class="img-fluid rounded shadow-lg" alt="Nuestro Equipo" style="width: 100%; height: auto;">
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-3"><i class="fas fa-users"></i> ¿Quiénes Somos?</h2>
+            <p class="text-justify">En Cazadoras de Memorias, creemos que cada rincón de España tiene una historia que merece ser contada, especialmente aquellos pequeños pueblos llenos de encanto y patrimonio que muchas veces pasan desapercibidos.</p>
+            <p class="text-justify">Nuestro objetivo es revitalizar estas comunidades rurales, atrayendo a las nuevas generaciones a reconectar con su riqueza histórica a través de experiencias únicas e inmersivas.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <h2 class="mb-3"><i class="fas fa-map-marked-alt"></i> ¿Qué hacemos?</h2>
+            <p class="text-justify">Diseñamos escape rooms al aire libre con temáticas que integran la historia y la cultura local de cada pueblo, creando aventuras emocionantes que no solo entretienen, sino que también educan y fomentan el turismo sostenible. Cada juego está cuidadosamente diseñado para resaltar los elementos únicos de cada lugar, invitando a los jugadores a convertirse en exploradores del tiempo mientras apoyan a las comunidades locales.</p>
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-3"><i class="fas fa-handshake"></i> Nuestro compromiso</h2>
+            <p class="text-justify">Nos apoyamos en investigaciones y colaboramos con ayuntamientos, empresas locales y expertos en patrimonio para garantizar que nuestras experiencias sean auténticas, accesibles y beneficiosas tanto para los visitantes como para las comunidades anfitrionas.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 class="mb-3"><i class="fas fa-flag"></i> Únete a nuestra aventura</h2>
+            <p class="text-center">Ayuda a escribir un nuevo capítulo para los pueblos de España. Porque en cada memoria hay un tesoro esperando ser descubierto.</p>
+            <a class="btn btn-primary btn-lg mt-3 mb-5" href="{{ url_for('contact') }}" role="button">Únete Ahora</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
