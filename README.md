@@ -1,4 +1,4 @@
-# Escape Rooms para Ayuntamientos
+# Página web EscapeRooms
 
 Este proyecto es un prototipo de una página web para un trabajo de la universidad. Es mi primera página web y está diseñada para mostrar cómo se pueden crear experiencias de escape room en pueblos para atraer turistas y ofrecer actividades emocionantes para los ciudadanos.
 
